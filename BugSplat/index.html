@@ -11,28 +11,45 @@
         function initialize()
         {
             count = 0;
+            let comment = "test";
             const bug1 = document.querySelector(".bug1");
-            comment = document.getElementById("comments");
+            const bug2 = document.querySelector(".bug2");
+            commentary = document.getElementById("comments");
         }
 
         function splatOne()
         {
-            setThumbnail('splat.jpg');
-            word = "It's too late!";
+            setThumbnail(1, 'splat.jpg');
+            comment = "It's too late!";
             display();
         }
 
-        function setThumbnail(input)
+        function splatTwo()
+        {
+            setThumbnail(2, 'splat.jpg');
+            comment = "It's too late!";
+            display();
+        }
+
+        function setThumbnail(num, input)
         {
             count++;
+            bugNumber = "bug"+num;
             thumbnail = input;
             display();
         }
 
+        // function setThumbnail2(input)
+        // {
+        //     count++;
+        //     thumbnail2 = input;
+        //     display();
+        // }
+
         function display()
         {
-            bug1.src = thumbnail;
-            comment.innerHTML = word;
+            bugNumber.src = thumbnail;
+            commentary.innerHTML = comment;
         }
     </script>
 </head>
@@ -41,95 +58,94 @@
 
     <h1>Bug Splat</h1>
 
-    <br><span id = "comments">Comments will appear here</span></br>
-
+    <p>Comments: <span id = "comments"></span></p>
     <div class="container">
 
-        <div id = "item1">
+        <div class = "item1">
             <img id="bug1" src="bug.png" class="image">
             <button onclick="splatOne();">
                 Splat
             </button>
         </div>
-        <div id = "item2">
+        <div iclassd = "item2">
             <img id="bug2" src="bug.png" class="image">
             <button onclick="splatTwo();">
                 Splat
             </button>
         </div>
-        <div id = "item3">
+        <div class = "item3">
             <img id="bug3" src="bug.png" class="image">
             <button onclick="splatThree();">
                 Splat
             </button>
         </div>
-        <div id = "item4">
+        <div class = "item4">
             <img id="bug4" src="bug.png" class="image">
             <button onclick="splatFour();">
                 Splat
             </button>
         </div>
-        <div id = "item5">
+        <div class = "item5">
             <img id="bug5" src="bug.png" class="image">
             <button onclick="splatFive();">
                 Splat
             </button>
         </div>
-        <div id = "item6">
+        <div class = "item6">
             <img id="bug6" src="bug.png" class="image">
             <button onclick="splatSix();">
                 Splat
             </button>
         </div>
-        <div id = "item7">
+        <div class = "item7">
             <img id="bug7" src="bug.png" class="image">
             <button onclick="splatSeven();">
                 Splat
             </button>
         </div>
-        <div id = "item8">
+        <div class = "item8">
             <img id="bug8" src="bug.png" class="image">
             <button onclick="splatEight();">
                 Splat
             </button>
         </div>
-        <div id = "item9">
+        <div class = "item9">
             <img id="bug9" src="bug.png" class="image">
             <button onclick="splatNine();">
                 Splat
             </button>
         </div>
-        <div id = "item10">
+        <div class = "item10">
             <img id="bug10" src="bug.png" class="image">
             <button onclick="splatTen();">
                 Splat
             </button>
         </div>
-        <div id = "item11">
+        <div class = "item11">
             <img id="bug11" src="bug.png" class="image">
             <button onclick="splatEleven();">
                 Splat
             </button>
         </div>
-        <div id = "item12">
+        <div class = "item12">
             <img id="bug12" src="bug.png" class="image">
             <button onclick="splatTwelve();">
                 Splat
             </button>
         </div>
-        <div id = "item13">
+        <div class = "item13">
             <img id="bug13" src="bug.png" class="image">
             <button onclick="splat();">
                 Splat
             </button>
         </div>
-        <div id = "item14">
+        <div class = "item14">
             <img id="bug14" src="bug.png" class="image">
             <button onclick="splat();">
                 Splat
             </button>
         </div>
-        <div id = "item15">
+        <div class = "item15">
             <img id="bug15" src="bug.png" class="image">
             <button onclick="splat();">
                 Splat
